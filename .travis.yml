@@ -12,5 +12,5 @@ install:
 
 # command to run tests
 script: 
-  - py.test --doctest-modules
+  - py.test --doc
 

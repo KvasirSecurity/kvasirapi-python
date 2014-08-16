@@ -11,7 +11,7 @@
 ##--------------------------------------#
 
 __author__ = "Kurt Grutzmacher <kgrutzma@cisco.com>"
-__date__ = "11 August 2014"
+__date__ = "16 August 2014"
 __version__ = "1.0.0"
 
 from config import Configuration
