@@ -23,7 +23,7 @@ Installation
 Usage
 -----
 
-1. Create a YAML configuration file
+- Create a YAML configuration file
 
 ```YAML
 customer:
@@ -43,7 +43,7 @@ instances:
     end: May 6, 2011
 ```
 
-2. Load the API module:
+- Load the API module:
 
 ```
 $ python
@@ -51,7 +51,7 @@ $ python
 >>> kvasir = KvasirAPI.API('config.yml')
 ```
 
-3. Access the API routines:
+- Access the API routines:
 
 ```
 >>> kvasir.configuration.customer_info()
