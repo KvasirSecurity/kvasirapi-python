@@ -11,6 +11,7 @@
 ##--------------------------------------#
 
 
+"""
 def test_hosts_add(configure_file):
     fields = {
         'f_ipaddr': '1.1.1.1',
@@ -23,4 +24,5 @@ def test_hosts_add(configure_file):
     }
     host_id = configure_file.call.test.hosts.add(**fields)
     assert host_id
+"""
 
