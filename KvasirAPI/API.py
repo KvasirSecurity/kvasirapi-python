@@ -27,7 +27,49 @@ class Calls(dict):
 
 ##-------------------------------------------------------------------------
 class API():
-    """KvasirAPI"""
+    """An API to communicate with Kvasir.
+
+    Kvasir is a Penetration Testing Data Management system (https://github.com/KvasirSecurity/Kvasir).
+    This API allows third-party tools to communicate with Kvasir through a JSONRPC library.
+
+    To use:
+
+    ```
+    import KvasirAPI
+    kvasir = KvasirAPI.API('config.yaml')
+    ```
+
+    Multiple Kvasir instances can be defined in the configuration file. A sample configuration:
+
+    ```
+    customer:
+      id: 11-ACME-01
+      full-name: ACME Widgets, Inc.
+      short-name: ACME
+      possessive: ACME Widget, Inc's
+      short-capital: ACME
+      possessive-capital: ACME's
+
+    instances:
+      internal:
+      url: "http://username:password@localhost:8000/internal/"
+      name: Internal Network
+      test_type: internal
+      start: May 2, 2011
+      end: May 6, 2011
+      filter_type: assetgroup
+      filter_value: organization
+
+    external:
+      url: "http://username:password@localhost:8000/external/"
+      test_type: external
+      start: May 2, 2011
+      end: May 6, 2011
+      name: External Network
+
+    web2py: build/web2py
+    ```
+    """
     def __init__(self, configuration=None):
         """
         Kvasir API initialization
