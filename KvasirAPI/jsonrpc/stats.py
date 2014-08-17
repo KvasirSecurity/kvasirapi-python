@@ -18,4 +18,11 @@ class Stats(ConnectorJSONRPC):
     """Database Statistics"""
 
     def dbcount(self, tblist=[], hostfilter=None):
+        """
+        Database statistics
+
+        :param tblist: List of table names to gather stats from
+        :param hostfilter: Valid hostfilter or None
+        :return: Dictionary of {table: count}
+        """
         return self.send.tbl_count(tblist, hostfilter)
