@@ -1,2 +1,2 @@
-PyYAML==3.11
+PyYAML==5.4
 jsonrpclib==0.1.3
